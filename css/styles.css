@@ -1,0 +1,86 @@
+/*
+ Purpose:  This file contains all the css rules w.r.t our application;
+ Author: Murali Pagadala;
+ Date:  08/06/2022;
+
+*/
+/* Global css rules */
+.grid{
+	display: grid;
+}
+
+#mainContainer{
+	border: 1px solid red;
+}
+/* Header styles */
+.headerContainer{
+	grid-template-columns: 20% auto;
+	background-color: #000;
+}
+
+nav ul{
+	grid-template-columns: repeat(6, auto);
+	margin-top: 30px;
+}
+nav ul a{
+	color: #f9f9f9;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/*Banner styles */
+.banner img{
+	width: 100%;
+	height: 450px;
+}
+
+/*Features block styles */
+.feature{
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0 50px;
+}
+.feature div{
+	border:  1px solid #ccc;
+	padding: 20px;
+	border-radius: 15px;
+}
+.feature img{
+	width: 100%;
+	height: 230px;
+}
+
+/* Popular Products styles */
+.popularProducts{
+	grid-template-columns: repeat(4, auto);
+}
+.popularProducts img{
+	width: 100%;
+	height: 350px;
+}
+.popularProducts figure{
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 20px;
+}
+.popularProducts figure:hover{
+	background-color: skyblue;
+}
+
+
+/*Footer styles */
+footer{
+	grid-template-columns: repeat(5, 1fr);
+	background-color: #000;
+	grid-column-gap: 30px;
+	padding: 20px;
+}
+footer *{
+	font-size: 20px;
+	color: #fff;
+}
+footer a{
+	text-decoration: none;
+	color: #ccc;
+}
+
